@@ -1,0 +1,14 @@
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.AssemblyInfoInputs.cache
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.AssemblyInfo.cs
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.csproj.CoreCompileInputs.cache
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\bin\Debug\net7.0\TextEditor_02.exe
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\bin\Debug\net7.0\TextEditor_02.deps.json
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\bin\Debug\net7.0\TextEditor_02.runtimeconfig.json
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\bin\Debug\net7.0\TextEditor_02.dll
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\bin\Debug\net7.0\TextEditor_02.pdb
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.dll
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\refint\TextEditor_02.dll
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.pdb
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\TextEditor_02.genruntimeconfig.cache
+C:\Users\jande\OneDrive\Documentos\GitHub\TextEditor_02\obj\Debug\net7.0\ref\TextEditor_02.dll
