@@ -9,7 +9,7 @@ static void Salvar(string text)
 
 Este aplicativo oferece as opções:
 - Criar um arquivo com extensão .txt, digitar um texto e salvar.
-- Abir/ler um arquivo de texto existente.
+- Abrir/ler um arquivo de texto existente.
 
 *******************************************************************
 
