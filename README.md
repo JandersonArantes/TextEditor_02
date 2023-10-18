@@ -8,10 +8,10 @@ static void Editar()
 static void Salvar(string text)
 
 Este aplicativo oferece as opções:
-- Criar um arquivo com extensão .txt, digitar um texto e salvar.
-- Abrir/ler um arquivo de texto existente.
-
-*******************************************************************
+- EDITAR ==> Criar um arquivo com extensão .txt, digitar um texto e salvar.
+- ABRIR ==> Abrir/ler um arquivo de texto existente e exibir na tela.
+- SAIR ==> Finaliza a aplicação.
+***************************************************************************************
 
 
 *** Explicando o código
@@ -66,14 +66,67 @@ static void Abrir()
     // "file" é declarado como um fluxo de escrita para o caminho/arquivo informado
     using (var file = new StreamReader(path))
     {
+        // A variável "text" recebe a leitura do início ao fim do texto contido no arquivo
         string text = file.ReadToEnd();
+        // Exibe o texto do arquivo
         Console.WriteLine(text);
     }
 
+    // Pausa a tela até o usuário pressionar <enter>
     Console.ReadLine();
+    // Chama o método Menu()
     Menu();
 }
 
-static void Editar() 
+// Método Editar()
+static void Editar()
+{
+    // Exibe mensagem
+    Console.WriteLine("Digite seu texto (ESC para sair)");
+    Console.WriteLine("--------------------------------");
+
+    // Atribui vazio a variável "text"
+    string text = "";
+
+    // Este laço de repetição é verdadeiro enquanto o usuário não pressionar "Esc" para
+    // encerrar a digitação do texto.
+    do
+    {
+        // Concatena o conteúdo da variável "text" com o texto digitado até pressionar <enter>
+        text += Console.ReadLine();
+        // Inseri nova linha no texto.
+        text += Environment.NewLine;
+    } while (Console.ReadKey().Key != ConsoleKey.Escape);
+
+    // Chama o método "Salvar" passando a variável "text" com o texto digitado.
+    Salvar(text);
+}
+
+// Método "Salvar" recebe o texto digitado para salvar.
+static void Salvar(string text)
+{
+    // Limpa a tela
+    Console.Clear();
+    // Solicita o caminho e nome do arquivo com extensão .txt
+    Console.WriteLine(" Qual caminho para salvar o arquivo?");
+    // A variável "path" recebe o caminho do arquivo para salvar o texto.
+    var path = Console.ReadLine();
+
+    // StreamWriter => Fluxo de escrita.
+    // A variável aponta para o arquivo informado pelo argumento "path"
+    using (var file = new StreamWriter(path))
+    {
+        // Escreve/Grava o conteúdo de "text" no arquivo apontado por "file"
+        file.Write(text);
+    }
+
+    // Exibe mensagem informando que o arquivo foi salvo com sucesso.
+    // Na mensagem, {path} é substituído por seu conteúdo que é o caminho e nome do arquivo com extensão .txt
+    Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+    // Aguar o usuário pressionar <enter>
+    Console.ReadLine();
+    // Chama o método Menu()
+    Menu();
+}
 
 ```
